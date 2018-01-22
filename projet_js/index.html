@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Front End Streamroot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+
+    <div ng-controller="countryController">
+      <h1>Countries Graph</h1>
+      <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels" chart-series="series" >
+      </canvas>
+    </div>
+
+    <div ng-controller="platformController">
+      <h1>Platforms Graph</h1>
+      <canvas id="base" class="chart-horizontal-bar"
+        chart-data="data" chart-labels="labels" >
+      </canvas>
+    </div>
+
+    <script type="text/javascript" src="js/country.js"></script>
+    <script type="text/javascript" src="js/platform.js"></script>
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/chart.js/angular-chart.min.js"></script>
+  </body>
+</html>
